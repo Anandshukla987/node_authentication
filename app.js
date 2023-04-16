@@ -5,6 +5,7 @@ const express = require('express');
 const app = express()
 
 dotenv.config({path:'./config.env'});
+const Port = process.env.PORT;
 
 require('./db/conn');
 
@@ -14,7 +15,6 @@ app.use(express.urlencoded({limit: '50mb', extended: true, parameterLimit: 50000
 app.use(cookieParser())
 app.use(require('./router/auth'));
 
-const Port = process.env.PORT;
 
 if(process.env.NODE_ENV == 'production'){
     const path=require('path');
