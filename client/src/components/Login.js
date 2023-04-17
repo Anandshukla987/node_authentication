@@ -29,7 +29,7 @@ const Login = () => {
         if(res.status === 406 || !data || res.status === 400){
             if(res.status === 400){ navigation("/signup"); }
             window.alert("Invalid Credentioals");
-            console.log("Invalid Credentioals")
+            // console.log("Invalid Credentioals")
         }
         else{
             dispatch({type: "USER", payload: true});

@@ -4,7 +4,7 @@ import { useParams, useNavigate} from 'react-router-dom';
 const Error = () => {
     const params = useParams();
     const navigation = useNavigate();
-    console.log(params.id);
+    // console.log(params.id);
     return (
         <div>
             <div className='errorPage'>

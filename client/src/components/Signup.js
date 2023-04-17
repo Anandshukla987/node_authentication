@@ -9,7 +9,7 @@ const Signup = () => {
     });
     let name,value;
     const handleInputs = e => {
-        console.log(e);
+        // console.log(e);
         
         name = e.target.name;
         value = e.target.value;
@@ -33,11 +33,11 @@ const Signup = () => {
         const data = await res.json();
         if(res.status === 422 || !data){
             window.alert("Sorry User not register Try again");
-            console.log("Sorry User not register Try again")
+            // console.log("Sorry User not register Try again")
         }
         else{
             window.alert("Congratulation User registered Successfully");
-            console.log("Congratulation User registered Successfully")
+            // console.log("Congratulation User registered Successfully")
 
             navigation("/login");
         }

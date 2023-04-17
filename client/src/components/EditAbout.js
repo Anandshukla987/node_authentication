@@ -51,7 +51,6 @@ const EditAbout = () => {
             }
             else {
                 setVerified(true);
-                console.log(data);
             }
 
         } catch (err) {
@@ -69,7 +68,7 @@ const EditAbout = () => {
         name = e.target.name;
         value = e.target.value;
         setUserData({ ...userData, [name]: value });
-        console.log(userData);
+        // console.log(userData);
     };
 
     const save = async () => {
@@ -85,7 +84,7 @@ const EditAbout = () => {
         });
         await res.json();
         if(res.status === 200){
-            console.log("Update successfully");
+            // console.log("Update successfully");
             navigation('/');
         }
         else{
