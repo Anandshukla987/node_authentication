@@ -352,19 +352,20 @@ input {
 
 @media only screen and (max-width:500px){
   .connect-withUs{
-    width: 90%;
-    height: 60%;
+    width: 100%;
+    height: 63%;
+    flex: 1;
   }
   .user-input{
     display: flex;
-    align-content: space-evenly;
+    flex-direction: column;
     justify-content: flex-start;
-    height: 27%;
+    height: 30%;
+    width: 100%;
+    flex: 1;
   }
 
-  .user-input input{
-    width: 154%;
-  }
+
   .info{
     display: flex;
     flex-direction: column;
