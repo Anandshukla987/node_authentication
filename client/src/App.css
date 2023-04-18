@@ -284,6 +284,7 @@ label {
   width: 27%;
   padding: 0.7rem 0;
   display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   flex-direction: row;
   box-shadow: 1.5px 2px rgb(22, 22, 22);
@@ -347,6 +348,32 @@ input {
   padding-left: 6px;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width:500px){
+  .connect-withUs{
+    width: 90%;
+    height: 60%;
+  }
+  .user-input{
+    display: flex;
+    align-content: space-evenly;
+    justify-content: flex-start;
+    height: 27%;
+  }
+
+  .user-input input{
+    width: 154%;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .detail{
+    width: 100%;
+  }
+  
 }
 
 .home-page {
