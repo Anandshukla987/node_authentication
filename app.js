@@ -18,7 +18,8 @@ app.use(require('./router/auth'));
 
 if(process.env.NODE_ENV == 'production'){
     const path=require('path');
-    app.get('/',(req,res)=>{
+    const routes = ["/","/about","/signup","/contact","/login","/editAbout"]
+    app.get(routes,(req,res)=>{
         app.use(express.static(path.resolve(__dirname,'client','build')));
         res.sendFile(path.resolve(__dirname,'client','build','index.html'));
     });
